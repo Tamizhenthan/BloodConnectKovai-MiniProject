@@ -13,6 +13,12 @@
     <div class="heading">
         <h2>Blood Bank Details</h2>
     </div>
+    <br>
+    <div class="myInput">
+        <center><input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search using region.." title="Type in a name"></center>
+    </div>
+    
+    <br>
 <form id="form1">
     <table id="customers">
         <tr>
@@ -20,6 +26,7 @@
             <th>Center Name</th>
             <th>Address</th>
             <th>Contact no</th>
+            <th>Region</th>
             <th>Stock Availability</th>
         </tr>
         <tr>
@@ -27,6 +34,7 @@
             <td id="bn1">Shanthi Blood Bank</td>
             <td>Sf No 128/2 2249, Shanthi Social Services Campus, Trichy Road, Singanallur, Coimbatore, Tamil Nadu, India - 641005</td>
             <td>0422 - 2576121,9843398959</td>
+            <td>South Coimbatore</td>
             <td><center><input type="button" value="view" onclick="view1()" /></center></td>
         </tr>
         <tr>
@@ -34,6 +42,7 @@
             <td id="bn2">G Kuppuswamy Naidu Memorial Blood Bank</td>
             <td>Post Box No 6327, Nethaji Road, Papanaickenpalayam, Coimbatore, Tamil Nadu, India - 641037</td>
             <td>0422 - 2245000,9994409109</td>
+            <td>North Coimbatore</td>
             <td><center><input type="button" value="view" onclick="view2()" /></center></td>
         </tr>
         <tr>
@@ -41,6 +50,7 @@
             <td id="bn3">Regional Blood Transfusion Center</td>
             <td>Post Box No 6327, G Kuppuswamy Naidu Memorial Hospital, Nethaji Road, Papanaickenpalayam, Coimbatore, Tamil Nadu, India - 641037</td>
             <td>0422 - 4305276,4305300</td>
+            <td>South Coimbatore</td>
             <td><center><input type="button" value="view" onclick="view3()" /></center></td>
         </tr>
         <tr>
@@ -48,6 +58,7 @@
             <td id="bn4">Shanthi Social Services</td>
             <td>S.F.No. 128/2, Trichy Road, Coimbatore, Tamil Nadu, India - 641005</td>
             <td>0422 - 2576121,9843398959</td>
+            <td>Pollachi</td>
             <td><center><input type="button" value="view" onclick="view4()" /></center></td>
         </tr>
         <tr>
@@ -55,6 +66,7 @@
             <td id="bn5">Indian Medical Association</td>
             <td>No 92, I M A Campus, Syrian Church Road, Coimbatore HO, Coimbatore, Tamil Nadu, India - 641001</td>
             <td>0422 - 2471824, 2473240, 6513322</td>
+            <td>North Coimbatore</td>
             <td><center><input type="button" value="view" onclick="view5()" /></center></td>
         </tr>
         <tr>
@@ -62,6 +74,7 @@
             <td id="bn6">Lions Club Of Coimbatore Legent Blood Bank & Research Centre</td>
             <td>No 420-422, D B Road, Red Rose Towers, RS Puram, Coimbatore, Tamil Nadu, India - 641002</td>
             <td>0422 - 2474412, 2470046</td>
+            <td>South Coimbatore</td>
             <td><center><input type="button" value="view" onclick="view6()" /></center></td>
         </tr>
         <tr>
@@ -69,6 +82,7 @@
             <td id="bn8">M/s. Sheela Hospital Pvt. Ltd</td>
             <td>No.46, Power House Road, Tatabad, Coimbatore, Tamil Nadu, India - 641012</td>
             <td>0422 - 2498381, 2498383</td>
+            <td>Pollachi</td>
             <td><center><input type="button" value="view" onclick="view7()" /></center></td>
         </tr>
         <tr>
@@ -76,6 +90,7 @@
             <td id="bn9">K G Blood Bank</td>
             <td>No 5, Goverment Arts College Road, Coimbatore Ho, Near Goverment Arts College, Coimbatore, Tamil Nadu, India - 641001</td>
             <td>0422 - 2212128, 2212121</td>
+            <td>South Coimbatore</td>
             <td><center><input type="button" value="view" onclick="view8()" /></center></td>
         </tr>
         <tr>
@@ -83,6 +98,7 @@
             <td id="bn9">Sri Ramakrishna Hospital</td>
             <td>No 395, Sarojini Naidu Road, Sidhapudur, Coimbatore, Tamil Nadu, India - 641044</td>
             <td>0422 - 4500204, 4389797, 4500203, 2210075, 4500272</td>
+            <td>North Coimbatore</td>
             <td><center><input type="button" value="view" onclick="view9()" /></center></td>
         </tr>
         <tr>
@@ -90,6 +106,7 @@
             <td id="bn10">Bio Medical Service Blood Bank</td>
             <td>174, Bashyakaralu Road East, RS Puram, Coimbatore, Tamil Nadu, India - 641002</td>
             <td>0422 - 2552297, 2544696</td>
+            <td>Pollachi</td>
             <td><center><input type="button" value="view" onclick="view10()" /></center></td>
         </tr>
         <tr>
@@ -97,6 +114,7 @@
             <td id="bn11">G Kuppuswamy Naidu Memorial Hospital</td>
             <td>P B No 632, Avinashi Road, Papanaickenpalayam, Coimbatore, Tamil Nadu, India - 641037</td>
             <td>0422 - 2211000, 2213501, 4305300, 4350220, 4350440</td>
+            <td>South Coimbatore</td>
             <td><center><input type="button" value="view" onclick="view11()" /></center></td>
         </tr>
         <tr>
@@ -104,6 +122,7 @@
             <td id="bn12">Sheela Hospitals Pvt Ltd</td>
             <td>46, East Power House Road, Coimbatore, Tamil Nadu - 641012</td>
             <td>0422 - 2498383, 2498381</td>
+            <td>North Coimbatore</td>
             <td><center><input type="button" value="view" onclick="view12()" /></center></td>
         </tr>
         <tr>
@@ -111,6 +130,7 @@
             <td id="bn13">P S G Hospitals</td>
             <td>Peelamedu, Coimbatore, Tamil Nadu, India - 641004</td>
             <td>0422 - 2572121, 2570170</td>
+            <td>South Coimbatore</td>
             <td><center><input type="button" value="view" onclick="view13()" /></center></td>
         </tr>
         <tr>
@@ -118,6 +138,7 @@
             <td id="bn14">Re Vijay Blood Bank</td>
             <td>11/120, Cross Cut Road, Gandharipuram, Coimbatore, Tamil Nadu, India - 614012</td>
             <td>0422 - 2235126, 2230153</td>
+            <td>Pollachi</td>
             <td><center><input type="button" value="view" onclick="view14()" /></center></td>
         </tr>
         <tr>
@@ -125,6 +146,7 @@
             <td id="bn15">M/s. Sri Ramakrishna Hospital Blood Bank</td>
             <td>2/213, Sarojini Naidu Road, New Sidhapudur, Coimbatore, Tamil Nadu, India - 641014</td>
             <td>0422 - 2210075, 2210076</td>
+            <td>Pollachi</td>
             <td><center><input type="button" value="view" onclick="view15()" /></center></td>
         </tr>
         <tr>
@@ -132,6 +154,7 @@
             <td id="bn16">K G Blood Bank</td>
             <td>No 5, Goverment Arts College Road, Coimbatore Ho, Near Goverment Arts College, Coimbatore, Tamil Nadu, India - 641001</td>
             <td>0422 - 2212128, 2212121</td>
+            <td>South Coimbatore</td>
             <td><center><input type="button" value="view" onclick="view16()" /></center></td>
         </tr>
         <tr>
@@ -139,6 +162,7 @@
             <td id="bn17">IMA Masonic Rotary Midtown Mahaveer Blood bank</td>
             <td>No 2, Syrian Church Road, Coimbatore Ho, Near Brookefields Mall, Coimbatore, Tamil Nadu, India - 641001</td>
             <td>0422 - 6513322, 6563322</td>
+            <td>North Coimbatore</td>
             <td><center><input type="button" value="view" onclick="view17()" /></center></td>
         </tr>
         <tr>
@@ -146,6 +170,7 @@
             <td id="bn18">Swaasam Blood Bank</td>
             <td>9/3 Sakthi Estate 3rd Street, M G Road, Opposite Ramakrishna Hospital, Avarampalayam, Coimbatore, Tamil Nadu, India - 641006</td>
             <td>9787144454, 9942544454</td>
+            <td>South Coimbatore</td>
             <td><center><input type="button" value="view" onclick="view18()" /></center></td>
         </tr>
         <tr>
@@ -153,6 +178,7 @@
             <td id="bn19">Ganga Hospital Blood Bank</td>
             <td>No 109, 11Th Street, Gandhipuram, Tatabad, Coimbatore, Tamil Nadu, India - 641012</td>
             <td>0422 - 2490727, 2236060, 3291295</td>
+            <td>Pollachi</td>
             <td><center><input type="button" value="view" onclick="view19()" /></center></td>
         </tr>
         <tr>
@@ -160,6 +186,7 @@
             <td id="bn20">CMC Hospital</td>
             <td>Coimbatore, Coimbatore, Tamil Nadu, India - 641002</td>
             <td>0422 - 2301393</td>
+            <td>South Coimbatore</td>
             <td><center><input type="button" value="view" onclick="view20()" /></center></td>
         </tr>
         <tr>
@@ -167,6 +194,7 @@
             <td id="bn21">M/s. G.Kuppusamy Naidu Memorial Hospital</td>
             <td>Pappanaicken Palayam, Coimbatore, Tamil Nadu, India - 641037</td>
             <td>0422 - 2213501</td>
+            <td>Pollachi</td>
             <td><center><input type="button" value="view" onclick="view21()" /></center></td>
         </tr>
         <tr>
@@ -174,6 +202,7 @@
             <td id="bn22">The Coimbatore Bio-Medical Services</td>
             <td>174, Bakshyakaralu Road East, RS Puram, Coimbatore, Tamil Nadu, India - 641002</td>
             <td>0422 - 2552297</td>
+            <td>North Coimbatore</td>
             <td><center><input type="button" value="view" onclick="view22()" /></center></td>
         </tr>
         <tr>
@@ -181,6 +210,7 @@
             <td id="bn23">M/s. SKV United Hospital Pvt Ltd</td>
             <td>771/5 B, Nehru Nagar Extension, Kalapatti Road, Civil Aerodrome, Coimbatore, Tamil Nadu, India - 641014</td>
             <td>0422 - 2628828</td>
+            <td>South Coimbatore</td>
             <td><center><input type="button" value="view" onclick="view23()" /></center></td>
         </tr>
         <tr>
@@ -188,6 +218,7 @@
             <td id="bn24">M/s. Ramana Gounder Medical Trust Blood Bank</td>
             <td>S F No47/48, Thudialur Village, Coimbatore, Tamil Nadu, India - 641034</td>
             <td>0422 - 2642488</td>
+            <td>Pollachi</td>
             <td><center><input type="button" value="view" onclick="view24()" /></center></td>
         </tr>
         <tr>
@@ -195,6 +226,7 @@
             <td id="bn25">M/s. Kovai Medical Centre & Hospital Blood Bank</td>
             <td>Avinashi Road, Civil Aero- drom, Coimbatore, Tamil Nadu, India - 600014</td>
             <td>0422 - 2627784</td>
+            <td>South Coimbatore</td>
             <td><center><input type="button" value="view" onclick="view25()" /></center></td>
         </tr>
         <tr>
@@ -202,6 +234,7 @@
             <td id="bn26">M/s. K.Govindasamy Naidu Memorial Trust</td>
             <td>KG Hospital, Government Arts College Road, Coimbatore, Tamil Nadu, India - 641018</td>
             <td>0422 - 2212121 </td>
+            <td>North Coimbatore</td>
             <td><center><input type="button" value="view" onclick="view26()" /></center></td>
         </tr>
         <tr>
@@ -209,6 +242,7 @@
             <td id="bn27">Government Hospital</td>
             <td>Udumalapet, Coimbatore, Tamil Nadu, India - 642126</td>
             <td>0425 - 2223065</td>
+            <td>Pollachi</td>
             <td><center><input type="button" value="view" onclick="view27()" /></center></td>
         </tr>
         <tr>
@@ -216,6 +250,7 @@
             <td id="bn28">ESI Hospital Coimbatore</td>
             <td>Varadharajapuram, Coimbatore, Tamil Nadu, India - 641018</td>
             <td>0422 - 2574393</td>
+            <td>South Coimbatore</td>
             <td><center><input type="button" value="view" onclick="view28()" /></center></td>
         </tr>
         <tr>
@@ -223,6 +258,7 @@
             <td id="bn29">Coimbatore Medical College Hospital</td>
             <td>No.1619 A, Trichy Rd, Coimbatore, Tamil Nadu 641018</td>
             <td>0422 - 2300871</td>
+            <td>North Coimbatore</td>
             <td><center><input type="button" value="view" onclick="view29()" /></center></td>
         </tr>
         <tr>
@@ -230,6 +266,7 @@
             <td id="bn30">Kongunad Hospitals Pvt Ltd Gandhipuram</td>
             <td>No 79, 11th Street, Gandhipuram, Tatabad, Coimbatore, Tamil Nadu, India - 641012</td>
             <td>0422 - 2494383, 2494363</td>
+            <td>South Coimbatore</td>
             <td><center><input type="button" value="view" onclick="view30()" /></center></td>
         </tr>
         <tr>
@@ -237,6 +274,7 @@
             <td id="bn31">Indian Red Cross Society Resource Centre</td>
             <td>8/26, Huzur Road, Coimbatore, Tamil Nadu, India - 641018</td>
             <td>0422 - 2218469, 2211209</td>
+            <td>Pollachi</td>
             <td><center><input type="button" value="view" onclick="view31()" /></center></td>
         </tr>
         <tr>
@@ -244,6 +282,7 @@
             <td id="bn32">Ima Masonic Rotary</td>
             <td>Coimbatore Press Colony, Coimbatore, Tamil Nadu, India - 641019</td>
             <td>0422 - 4513322</td>
+            <td>North Coimbatore</td>
             <td><center><input type="button" value="view" onclick="view32()" /></center></td>
         </tr>
         <tr>
@@ -251,6 +290,7 @@
             <td id="bn33">Usv Enterprises</td>
             <td>No S 18, Kovaipudur, Coimbatore, Tamil Nadu, India - 641042</td>
             <td>0422 - 2606981</td>
+            <td>South Coimbatore</td>
             <td><center><input type="button" value="view" onclick="view33()" /></center></td>
         </tr>
         <tr>
@@ -258,12 +298,32 @@
             <td id="bn34">Lion Blood Bank</td>
             <td>422, D.B.Road, Coimbatore Ho, R.S.Puram, Coimbatore, Tamil Nadu, India - 641001</td>
             <td>9488559922</td>
+            <td>North Coimbatore</td>
             <td><center><input type="button" value="view" onclick="view34()" /></center></td>
         </tr>
 
     </table>
 </form>
     <script>
+   function myFunction() {
+  var input, filter, table, tr, td, i, region;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("customers");
+  tr = table.getElementsByTagName("tr");
+
+  for (i = 1; i < tr.length; i++) { 
+    td = tr[i].getElementsByTagName("td");
+    region = td[4].textContent || td[4].innerText; 
+    if (region.toUpperCase().indexOf(filter) > -1) {
+      tr[i].style.display = "";
+    } else {
+      tr[i].style.display = "none";
+    }
+  }
+}
+
+
         function view1()
         {
        
