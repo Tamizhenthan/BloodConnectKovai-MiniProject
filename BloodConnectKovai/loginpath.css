@@ -1,0 +1,133 @@
+body{
+	background-color: black;
+	background-image: url(back.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	backdrop-filter: blur(6px);-webkit-backdrop-filter: 
+	blur(6px);background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 10px;border: 0.5px solid rgba(255, 255, 255, 0.18);
+}
+.container {
+  display: grid;
+  align-items: center; 
+  grid-template-columns:1fr 1fr 1fr;
+  background: linear-gradient(90deg, rgba(173,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(173,0,0,1) 100%);
+ }
+ 
+ img {
+   max-width: 13%;
+   max-height:1%;
+ }
+.image img {
+  filter: drop-shadow(1px 5px 5px #c03636);
+  -webkit-filter: drop-shadow(5px 5px 5px #ff0000);
+}
+ .text {
+  color: aliceblue;
+   font-size: 25px;
+ }
+ .list{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+ }
+ a{
+  text-decoration: none;
+  color: white;
+ }
+ .list :hover{
+  color: black;
+ }
+ .slogan{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 20px;
+ }
+ .slogan :hover{
+  color:red;
+ }
+ td {
+  text-align: center;
+}
+label{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+.button {
+  display: inline-block;
+  border-radius: 8px;
+  background-color: #ad0000;
+  border-color: rgb(228, 91, 91);
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 24px;
+  font-family: arial black;
+  padding: 43px 40px;
+  height: 200%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+h3{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 19px;
+  color: #631414;
+}
+.bb{
+  backdrop-filter: blur(12px);-webkit-backdrop-filter: 
+	blur(12px);background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 10px;border: 0.5px solid rgba(255, 255, 255, 0.18);
+}
+.containe {
+  display: grid;
+  align-items: center; 
+  grid-template-columns:1fr 1fr;
+ }
+ .mySlides {display:none;}
+ h2{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  color: #000000;
+}
+.contain {
+  display: grid;
+  align-items: center; 
+  grid-template-columns:1fr 1fr 1fr;
+  background: #e29999;
+ }
+ .list1{
+  color: rgb(41, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+ }
+ .list1 :hover{
+  color: rgb(100, 0, 0);
+ }
+.num {
+  font: 800 40px system-ui;
+}
+.numb {
+  font: 800 40px system-ui;
+}

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Bank List</title>
+    <link rel="stylesheet" href="bloodbank.css">
+</head>
+<body>
+    <a href="index.html"> <img src="home.png" width="30" height="30"></a>
+    <a href="donors.php"><h3 style="font-family: arial black;">Donor Availability >></h3></a>
+    <div class="heading">
+        <h2>Blood Bank Details</h2>
+    </div>
+<form id="form1">
+    <table id="customers">
+        <tr>
+            <th>Blood Bank Id</th>
+            <th>Center Name</th>
+            <th>Address</th>
+            <th>Contact no</th>
+            <th>Stock Availability</th>
+        </tr>
+        <tr>
+            <td id="b1">BBA1</td>
+            <td id="bn1">Shanthi Blood Bank</td>
+            <td>Sf No 128/2 2249, Shanthi Social Services Campus, Trichy Road, Singanallur, Coimbatore, Tamil Nadu, India - 641005</td>
+            <td>0422 - 2576121,9843398959</td>
+            <td><center><input type="button" value="view" onclick="view1()" /></center></td>
+        </tr>
+        <tr>
+            <td id="b2">BBB2</td>
+            <td id="bn2">G Kuppuswamy Naidu Memorial Blood Bank</td>
+            <td>Post Box No 6327, Nethaji Road, Papanaickenpalayam, Coimbatore, Tamil Nadu, India - 641037</td>
+            <td>0422 - 2245000,9994409109</td>
+            <td><center><input type="button" value="view" onclick="view2()" /></center></td>
+        </tr>
+        <tr>
+            <td id="b3">BBC3</td>
+            <td id="bn3">Regional Blood Transfusion Center</td>
+            <td>Post Box No 6327, G Kuppuswamy Naidu Memorial Hospital, Nethaji Road, Papanaickenpalayam, Coimbatore, Tamil Nadu, India - 641037</td>
+            <td>0422 - 4305276,4305300</td>
+            <td><center><input type="button" value="view" onclick="view3()" /></center></td>
+        </tr>
+        <tr>
+            <td id="b4">BBD4</td>
+            <td id="bn4">Shanthi Social Services</td>
+            <td>S.F.No. 128/2, Trichy Road, Coimbatore, Tamil Nadu, India - 641005</td>
+            <td>0422 - 2576121,9843398959</td>
+            <td><center><input type="button" value="view" onclick="view4()" /></center></td>
+        </tr>
+        <tr>
+            <td id="b5">BBE5</td>
+            <td id="bn5">Indian Medical Association</td>
+            <td>No 92, I M A Campus, Syrian Church Road, Coimbatore HO, Coimbatore, Tamil Nadu, India - 641001</td>
+            <td>0422 - 2471824, 2473240, 6513322</td>
+            <td><center><input type="button" value="view" onclick="view5()" /></center></td>
+        </tr>
+        <tr>
+            <td id="b6">BBF6</td>
+            <td id="bn6">Lions Club Of Coimbatore Legent Blood Bank & Research Centre</td>
+            <td>No 420-422, D B Road, Red Rose Towers, RS Puram, Coimbatore, Tamil Nadu, India - 641002</td>
+            <td>0422 - 2474412, 2470046</td>
+            <td><center><input type="button" value="view" onclick="view6()" /></center></td>
+        </tr>
+        <tr>
+            <td id="b7">BBG7</td>
+            <td id="bn8">M/s. Sheela Hospital Pvt. Ltd</td>
+            <td>No.46, Power House Road, Tatabad, Coimbatore, Tamil Nadu, India - 641012</td>
+            <td>0422 - 2498381, 2498383</td>
+            <td><center><input type="button" value="view" onclick="view7()" /></center></td>
+        </tr>
+        <tr>
+            <td id="b8">BBH8</td>
+            <td id="bn9">K G Blood Bank</td>
+            <td>No 5, Goverment Arts College Road, Coimbatore Ho, Near Goverment Arts College, Coimbatore, Tamil Nadu, India - 641001</td>
+            <td>0422 - 2212128, 2212121</td>
+            <td><center><input type="button" value="view" onclick="view8()" /></center></td>
+        </tr>
+        <tr>
+            <td id="b9">BBI9</td>
+            <td id="bn9">Sri Ramakrishna Hospital</td>
+            <td>No 395, Sarojini Naidu Road, Sidhapudur, Coimbatore, Tamil Nadu, India - 641044</td>
+            <td>0422 - 4500204, 4389797, 4500203, 2210075, 4500272</td>
+            <td><center><input type="button" value="view" onclick="view9()" /></center></td>
+        </tr>
+        <tr>
+            <td id="b10">BBJ10</td>
+            <td id="bn10">Bio Medical Service Blood Bank</td>
+            <td>174, Bashyakaralu Road East, RS Puram, Coimbatore, Tamil Nadu, India - 641002</td>
+            <td>0422 - 2552297, 2544696</td>
+            <td><center><input type="button" value="view" onclick="view10()" /></center></td>
+        </tr>
+        <tr>
+            <td id="b11">BBK11</td>
+            <td id="bn11">G Kuppuswamy Naidu Memorial Hospital</td>
+            <td>P B No 632, Avinashi Road, Papanaickenpalayam, Coimbatore, Tamil Nadu, India - 641037</td>
+            <td>0422 - 2211000, 2213501, 4305300, 4350220, 4350440</td>
+            <td><center><input type="button" value="view" onclick="view11()" /></center></td>
+        </tr>
+        <tr>
+            <td id="b12">BBL12</td>
+            <td id="bn12">Sheela Hospitals Pvt Ltd</td>
+            <td>46, East Power House Road, Coimbatore, Tamil Nadu - 641012</td>
+            <td>0422 - 2498383, 2498381</td>
+            <td><center><input type="button" value="view" onclick="view12()" /></center></td>
+        </tr>
+        <tr>
+            <td id="b13">BBM13</td>
+            <td id="bn13">P S G Hospitals</td>
+            <td>Peelamedu, Coimbatore, Tamil Nadu, India - 641004</td>
+            <td>0422 - 2572121, 2570170</td>
+            <td><center><input type="button" value="view" onclick="view13()" /></center></td>
+        </tr>
+        <tr>
+            <td id="b14">BBN14</td>
+            <td id="bn14">Re Vijay Blood Bank</td>
+            <td>11/120, Cross Cut Road, Gandharipuram, Coimbatore, Tamil Nadu, India - 614012</td>
+            <td>0422 - 2235126, 2230153</td>
+            <td><center><input type="button" value="view" onclick="view14()" /></center></td>
+        </tr>
+        <tr>
+            <td id="b15">BBO15</td>
+            <td id="bn15">M/s. Sri Ramakrishna Hospital Blood Bank</td>
+            <td>2/213, Sarojini Naidu Road, New Sidhapudur, Coimbatore, Tamil Nadu, India - 641014</td>
+            <td>0422 - 2210075, 2210076</td>
+            <td><center><input type="button" value="view" onclick="view15()" /></center></td>
+        </tr>
+        <tr>
+            <td id="b16">BBP16</td>
+            <td id="bn16">K G Blood Bank</td>
+            <td>No 5, Goverment Arts College Road, Coimbatore Ho, Near Goverment Arts College, Coimbatore, Tamil Nadu, India - 641001</td>
+            <td>0422 - 2212128, 2212121</td>
+            <td><center><input type="button" value="view" onclick="view16()" /></center></td>
+        </tr>
+        <tr>
+            <td id="b17">BBQ17</td>
+            <td id="bn17">IMA Masonic Rotary Midtown Mahaveer Blood bank</td>
+            <td>No 2, Syrian Church Road, Coimbatore Ho, Near Brookefields Mall, Coimbatore, Tamil Nadu, India - 641001</td>
+            <td>0422 - 6513322, 6563322</td>
+            <td><center><input type="button" value="view" onclick="view17()" /></center></td>
+        </tr>
+        <tr>
+            <td id="b18">BBR18</td>
+            <td id="bn18">Swaasam Blood Bank</td>
+            <td>9/3 Sakthi Estate 3rd Street, M G Road, Opposite Ramakrishna Hospital, Avarampalayam, Coimbatore, Tamil Nadu, India - 641006</td>
+            <td>9787144454, 9942544454</td>
+            <td><center><input type="button" value="view" onclick="view18()" /></center></td>
+        </tr>
+        <tr>
+            <td id="b19">BBS19</td>
+            <td id="bn19">Ganga Hospital Blood Bank</td>
+            <td>No 109, 11Th Street, Gandhipuram, Tatabad, Coimbatore, Tamil Nadu, India - 641012</td>
+            <td>0422 - 2490727, 2236060, 3291295</td>
+            <td><center><input type="button" value="view" onclick="view19()" /></center></td>
+        </tr>
+        <tr>
+            <td id="b20">BBT20</td>
+            <td id="bn20">CMC Hospital</td>
+            <td>Coimbatore, Coimbatore, Tamil Nadu, India - 641002</td>
+            <td>0422 - 2301393</td>
+            <td><center><input type="button" value="view" onclick="view20()" /></center></td>
+        </tr>
+        <tr>
+            <td id="b21">BBU21</td>
+            <td id="bn21">M/s. G.Kuppusamy Naidu Memorial Hospital</td>
+            <td>Pappanaicken Palayam, Coimbatore, Tamil Nadu, India - 641037</td>
+            <td>0422 - 2213501</td>
+            <td><center><input type="button" value="view" onclick="view21()" /></center></td>
+        </tr>
+        <tr>
+            <td id="b22">BBV22</td>
+            <td id="bn22">The Coimbatore Bio-Medical Services</td>
+            <td>174, Bakshyakaralu Road East, RS Puram, Coimbatore, Tamil Nadu, India - 641002</td>
+            <td>0422 - 2552297</td>
+            <td><center><input type="button" value="view" onclick="view22()" /></center></td>
+        </tr>
+        <tr>
+            <td id="b23">BBW23</td>
+            <td id="bn23">M/s. SKV United Hospital Pvt Ltd</td>
+            <td>771/5 B, Nehru Nagar Extension, Kalapatti Road, Civil Aerodrome, Coimbatore, Tamil Nadu, India - 641014</td>
+            <td>0422 - 2628828</td>
+            <td><center><input type="button" value="view" onclick="view23()" /></center></td>
+        </tr>
+        <tr>
+            <td id="b24">BBX24</td>
+            <td id="bn24">M/s. Ramana Gounder Medical Trust Blood Bank</td>
+            <td>S F No47/48, Thudialur Village, Coimbatore, Tamil Nadu, India - 641034</td>
+            <td>0422 - 2642488</td>
+            <td><center><input type="button" value="view" onclick="view24()" /></center></td>
+        </tr>
+        <tr>
+            <td id="b25">BBY25</td>
+            <td id="bn25">M/s. Kovai Medical Centre & Hospital Blood Bank</td>
+            <td>Avinashi Road, Civil Aero- drom, Coimbatore, Tamil Nadu, India - 600014</td>
+            <td>0422 - 2627784</td>
+            <td><center><input type="button" value="view" onclick="view25()" /></center></td>
+        </tr>
+        <tr>
+            <td id="b26">BBZ26</td>
+            <td id="bn26">M/s. K.Govindasamy Naidu Memorial Trust</td>
+            <td>KG Hospital, Government Arts College Road, Coimbatore, Tamil Nadu, India - 641018</td>
+            <td>0422 - 2212121 </td>
+            <td><center><input type="button" value="view" onclick="view26()" /></center></td>
+        </tr>
+        <tr>
+            <td id="b27">BBAA27</td>
+            <td id="bn27">Government Hospital</td>
+            <td>Udumalapet, Coimbatore, Tamil Nadu, India - 642126</td>
+            <td>0425 - 2223065</td>
+            <td><center><input type="button" value="view" onclick="view27()" /></center></td>
+        </tr>
+        <tr>
+            <td id="b28">BBBB28</td>
+            <td id="bn28">ESI Hospital Coimbatore</td>
+            <td>Varadharajapuram, Coimbatore, Tamil Nadu, India - 641018</td>
+            <td>0422 - 2574393</td>
+            <td><center><input type="button" value="view" onclick="view28()" /></center></td>
+        </tr>
+        <tr>
+            <td id="b29">BBCC29</td>
+            <td id="bn29">Coimbatore Medical College Hospital</td>
+            <td>No.1619 A, Trichy Rd, Coimbatore, Tamil Nadu 641018</td>
+            <td>0422 - 2300871</td>
+            <td><center><input type="button" value="view" onclick="view29()" /></center></td>
+        </tr>
+        <tr>
+            <td id="b30">BBDD30</td>
+            <td id="bn30">Kongunad Hospitals Pvt Ltd Gandhipuram</td>
+            <td>No 79, 11th Street, Gandhipuram, Tatabad, Coimbatore, Tamil Nadu, India - 641012</td>
+            <td>0422 - 2494383, 2494363</td>
+            <td><center><input type="button" value="view" onclick="view30()" /></center></td>
+        </tr>
+        <tr>
+            <td id="b31">BBEE31</td>
+            <td id="bn31">Indian Red Cross Society Resource Centre</td>
+            <td>8/26, Huzur Road, Coimbatore, Tamil Nadu, India - 641018</td>
+            <td>0422 - 2218469, 2211209</td>
+            <td><center><input type="button" value="view" onclick="view31()" /></center></td>
+        </tr>
+        <tr>
+            <td id="b32">BBFF32</td>
+            <td id="bn32">Ima Masonic Rotary</td>
+            <td>Coimbatore Press Colony, Coimbatore, Tamil Nadu, India - 641019</td>
+            <td>0422 - 4513322</td>
+            <td><center><input type="button" value="view" onclick="view32()" /></center></td>
+        </tr>
+        <tr>
+            <td id="b33">BBGG33</td>
+            <td id="bn33">Usv Enterprises</td>
+            <td>No S 18, Kovaipudur, Coimbatore, Tamil Nadu, India - 641042</td>
+            <td>0422 - 2606981</td>
+            <td><center><input type="button" value="view" onclick="view33()" /></center></td>
+        </tr>
+        <tr>
+            <td id="b34">BBHH34</td>
+            <td id="bn34">Lion Blood Bank</td>
+            <td>422, D.B.Road, Coimbatore Ho, R.S.Puram, Coimbatore, Tamil Nadu, India - 641001</td>
+            <td>9488559922</td>
+            <td><center><input type="button" value="view" onclick="view34()" /></center></td>
+        </tr>
+
+    </table>
+</form>
+    <script>
+        function view1()
+        {
+       
+            window.location.href = 'unitdetails.php?bbid=' + "BBA1" + '&b=' + "Shanthi Blood Bank" ;
+        }
+        function view2()
+        {
+       
+            window.location.href = 'unitdetails.php?bbid=' + "BBB2"+ '&b=' + "G Kuppuswamy Naidu Memorial Blood Bank";
+        }
+        function view3()
+        {
+       
+            window.location.href = 'unitdetails.php?bbid=' + "BBC3" + '&b=' + "Regional Blood Transfusion Center";
+        }
+        function view4()
+        {
+       
+            window.location.href = 'unitdetails.php?bbid=' + "BBD4" + '&b=' + "Shanthi Social Services";
+        }
+        function view5()
+        {
+       
+            window.location.href = 'unitdetails.php?bbid=' + "BBE5" + '&b=' + "Indian Medical Association";
+        }
+        function view6()
+        {
+       
+            window.location.href = 'unitdetails.php?bbid=' + "BBF6" + '&b=' + "Lions Club Of Coimbatore Legent Blood Bank & Research Centre";
+        }
+        function view7()
+        {
+       
+            window.location.href = 'unitdetails.php?bbid=' + "BBG7" + '&b=' + "M/s. Sheela Hospital Pvt. Ltd";
+        }
+        function view8()
+        {
+       
+            window.location.href = 'unitdetails.php?bbid=' + "BBH8" + '&b=' + "M/s. Sheela Hospital Pvt. Ltd";
+        }
+        function view9()
+        {
+       
+            window.location.href = 'unitdetails.php?bbid=' + "BBI9" + '&b=' + "Sri Ramakrishna Hospital";
+        }
+        function view10()
+        {
+       
+            window.location.href = 'unitdetails.php?bbid=' + "BBJ10" + '&b=' + "Bio Medical Service Blood Bank";
+        }
+        function view11()
+        {
+       
+            window.location.href = 'unitdetails.php?bbid=' + "BBK11" + '&b=' + "G Kuppuswamy Naidu Memorial Hospital";
+        }
+        function view12()
+        {
+       
+            window.location.href = 'unitdetails.php?bbid=' + "BBL12" + '&b=' + "Sheela Hospitals Pvt Ltd";
+        }
+        function view13()
+        {
+       
+            window.location.href = 'unitdetails.php?bbid=' + "BBM13" + '&b=' + "P S G Hospitals";
+        }
+        function view14()
+        {
+       
+            window.location.href = 'unitdetails.php?bbid=' + "BBN14" + '&b=' + "Re Vijay Blood Bank";
+        }
+        function view15()
+        {
+       
+            window.location.href = 'unitdetails.php?bbid=' + "BBO15" + '&b=' + "M/s. Sri Ramakrishna Hospital Blood Bank";
+        }
+        function view16()
+        {
+       
+            window.location.href = 'unitdetails.php?bbid=' + "BBP16" + '&b=' + "K G Blood Bank";
+        }
+        function view17()
+        {
+       
+            window.location.href = 'unitdetails.php?bbid=' + "BBQ17" + '&b=' + "IMA Masonic Rotary Midtown Mahaveer Blood bank";
+        }
+        function view18()
+        {
+       
+            window.location.href = 'unitdetails.php?bbid=' + "BBR18" + '&b=' + "Swaasam Blood Bank";
+        }
+        function view19()
+        {
+       
+            window.location.href = 'unitdetails.php?bbid=' + "BBS19" + '&b=' + "Ganga Hospital Blood Bank";
+        }
+        function view20()
+        {
+       
+            window.location.href = 'unitdetails.php?bbid=' + "BBT20" + '&b=' + "CMC Hospital";
+        }
+        function view21()
+        {
+       
+            window.location.href = 'unitdetails.php?bbid=' + "BBU21" + '&b=' + "M/s. G.Kuppusamy Naidu Memorial Hospital";
+        }
+        function view22()
+        {
+       
+            window.location.href = 'unitdetails.php?bbid=' + "BBV22" + '&b=' + "The Coimbatore Bio-Medical Services";
+        }
+        function view23()
+        {
+       
+            window.location.href = 'unitdetails.php?bbid=' + "BBW23" + '&b=' + "M/s. SKV United Hospital Pvt Ltd";
+        }
+        function view24()
+        {
+       
+            window.location.href = 'unitdetails.php?bbid=' + "BBX24" + '&b=' + "M/s. Ramana Gounder Medical Trust Blood Bank";
+        }
+        function view25()
+        {
+       
+            window.location.href = 'unitdetails.php?bbid=' + "BBY25" + '&b=' + "M/s. Kovai Medical Centre & Hospital Blood Bank";
+        }
+        function view26()
+        {
+       
+            window.location.href = 'unitdetails.php?bbid=' + "BBZ26" + '&b=' + "M/s. K.Govindasamy Naidu Memorial Trust";
+        }
+        function view27()
+        {
+       
+            window.location.href = 'unitdetails.php?bbid=' + "BBAA27" + '&b=' + "Government Hospital";
+        }
+        function view28()
+        {
+       
+            window.location.href = 'unitdetails.php?bbid=' + "BBBB28" + '&b=' + "ESI Hospital Coimbatore";
+        }
+        function view29()
+        {
+       
+            window.location.href = 'unitdetails.php?bbid=' + "BBCC29"+ '&b=' + "Coimbatore Medical College Hospital";
+        }
+        function view30()
+        {
+       
+            window.location.href = 'unitdetails.php?bbid=' + "BBDD30" + '&b=' + "Kongunad Hospitals Pvt Ltd Gandhipuram";
+        }
+        function view31()
+        {
+       
+            window.location.href = 'unitdetails.php?bbid=' + "BBEE31" + '&b=' + "Indian Red Cross Society Resource Centre";
+        }
+        function view32()
+        {
+       
+            window.location.href = 'unitdetails.php?bbid=' + "BBFF32" + '&b=' + "Ima Masonic Rotary";
+        }
+        function view33()
+        {
+       
+            window.location.href = 'unitdetails.php?bbid=' + "BBGG33" + '&b=' + "Usv Enterprises";
+        }
+        function view34()
+        {
+       
+            window.location.href = 'unitdetails.php?bbid=' + "BBHH34" + '&b=' + "Lion Blood Bank";
+        }
+    </script>
+</body>
+</html>
