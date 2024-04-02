@@ -1,2 +1,2 @@
 # BloodConnectKovai-MiniProject
-Blood donation and blood requirement Webpage
+Blood donation and blood requirement Website
